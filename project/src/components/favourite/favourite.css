@@ -1,0 +1,37 @@
+.favourite-section {
+  position: relative;
+  margin-bottom: 171px;
+  padding-top: 78px;
+}
+
+.favourite-section::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -100px;
+  width: 807px;
+  height: 575px;
+  background: url("../../../public/img/favourite-bg.png") no-repeat;
+}
+
+.favourite {
+  position: relative;
+  max-width: 512px;
+  margin-left: auto;
+}
+
+.favourite__heading {
+  margin-bottom: 30px;
+}
+
+.favourite__text {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.favourite__button {
+  padding: 20px 40px;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+}
