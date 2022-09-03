@@ -1,13 +1,14 @@
 .promo {
   position: relative;
+  padding-top: 130px;
   padding-right: 586px;
 }
 
 .promo::after {
   z-index: -1;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 99px;
+  right: -36px;
   content: '';
   width: 700px;
   height: 712px;
@@ -26,8 +27,8 @@
 
 .promo__heading::after {
   position: absolute;
-  bottom: 25px;
-  right: 90px;
+  bottom: 31px;
+  right: 158px;
   width: 73px;
   height: 58px;
   content: '';
@@ -48,6 +49,7 @@
   font-size: 18px;
   line-height: 30px;
   border-radius: 126px;
+  letter-spacing: 0.025em;
 }
 
 .promo__link {

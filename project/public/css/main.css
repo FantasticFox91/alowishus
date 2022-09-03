@@ -423,6 +423,7 @@ main {
   line-height: 26px;
   color: #ffffff;
   background-color: #1b1b1d;
+  border: none;
   border-radius: 63px;
   cursor: pointer;
 }
