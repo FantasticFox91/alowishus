@@ -7,23 +7,21 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    max-width: none;
+    max-width: 740px;
     width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    margin-bottom: 200px;
+    max-width: 1240px;
+    margin-bottom: 204px;
+    padding-top: 113px;
   }
 }
 
 .download-app {
-  @media (min-width: $tablet-width) {
-
-  }
-
   @media (min-width: $desktop-width) {
-    width: 551px;
+    width: 580px;
     padding-left: 39px;
   }
 }
@@ -36,6 +34,11 @@
     width: 308px;
     height: 380px;
     margin-left: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 781px;
+    height: 727px;
   }
 }
 
@@ -56,5 +59,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
+  }
+}
+
+.download-app__heading {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
   }
 }

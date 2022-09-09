@@ -9,6 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 150px;
     margin-bottom: 190px;
 
     &::before {
@@ -32,11 +33,19 @@
   margin-bottom: 20px;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+    text-align: center;
+    width: 580px;
+    margin: 0 auto;
     margin-bottom: 90px;
 
     & br {
-      display: block;
+      display: none;
     }
   }
 }

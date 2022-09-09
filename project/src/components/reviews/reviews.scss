@@ -70,7 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -271px;
+    margin-left: -285px;
   }
 }
 
@@ -100,6 +100,10 @@
   @media (min-width: $tablet-width) {
     padding: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 33px 40px 40px 40px;
+  }
 }
 
 .card__text {
@@ -111,6 +115,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -136,6 +141,12 @@
     font-size: 19px;
     line-height: 17px;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 33px;
   }
 }
 

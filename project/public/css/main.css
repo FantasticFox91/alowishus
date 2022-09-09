@@ -465,21 +465,22 @@ main {
 @media (min-width: 1440px) {
   .container {
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0;
     max-width: 1240px;
+  }
+
+  .page-section {
+    padding: 0;
   }
 
   .page-section__heading {
     font-size: 64px;
     line-height: 70px;
+    margin-bottom: 25px;
   }
 
   .page-section__text {
     font-size: 24px;
     line-height: 35px;
-  }
-
-  .page-header {
-    padding: 20px;
   }
 }

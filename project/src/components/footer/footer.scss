@@ -15,7 +15,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 108px 227px
+    gap: 108px 227px;
+    grid-template-rows: 1fr 350px;
   }
 }
 

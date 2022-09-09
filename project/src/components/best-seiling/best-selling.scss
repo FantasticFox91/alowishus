@@ -8,14 +8,19 @@
     max-width: none;
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 100px;
+    padding-top: 56px;
+  }
 }
 
 .bestselling::after {
   @media (min-width: $desktop-width) {
     position: absolute;
     content: "";
-    top: -169px;
-    right: -190px;
+    top: -114px;
+    right: -202px;
     width: 285px;
     height: 313px;
     background: url("../../../public/img/best-selling-bg.png") no-repeat;
@@ -32,7 +37,15 @@
   text-align: center;
 
   @media (min-width: $desktop-width) {
+    & br {
+      display: none;
+    }
+
     margin-bottom: 178px;
+    text-align: center;
+    width: 580px;
+    margin: 0 auto;
+    margin-bottom: 180px;
   }
 }
 

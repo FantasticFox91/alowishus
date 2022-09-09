@@ -2,7 +2,12 @@
 
 .promo-section {
   @media (min-width: $tablet-width) {
+    max-width: 740px;
     justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1240px;
   }
 }
 
@@ -102,6 +107,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    gap: 0;
     justify-content: start;
   }
 }

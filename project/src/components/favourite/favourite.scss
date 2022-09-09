@@ -7,13 +7,23 @@
     max-width: none;
     padding-left: 360px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .favourite-section {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    max-width: 740px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 171px;
+    padding-top: 82px;
+    max-width: 1240px;
   }
 }
 
@@ -35,7 +45,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -70px;
+    top: 3px;
     bottom: auto;
     left: -100px;
     width: 807px;
@@ -58,6 +68,10 @@
   @media (min-width: $tablet-width) {
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
 }
 
 .favourite__text {
@@ -66,7 +80,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
