@@ -6,12 +6,16 @@
 }
 
 .footer__top {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-auto-flow: column;
-    gap: 108px 227px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 220px;
+    gap: 10px 100px
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 108px 227px
   }
 }
 

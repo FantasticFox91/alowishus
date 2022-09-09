@@ -2,6 +2,11 @@
 
 .favourite {
   max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    max-width: none;
+    padding-left: 360px;
+  }
 }
 
 .favourite-section {
@@ -20,6 +25,14 @@
   bottom: 167px;
   background: url("../../../public/img/favourite-bg.png") no-repeat;
   background-size: 281px 186px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    bottom: 60px;
+    width: 350px;
+    height: 288px;
+    background-size: 404px 288px;
+  }
 
   @media (min-width: $desktop-width) {
     top: -70px;
@@ -42,7 +55,7 @@
 .favourite__heading {
   text-align: center;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     text-align: left;
   }
 }
@@ -50,6 +63,11 @@
 .favourite__text {
   margin: 0;
   padding-bottom: 250px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 60px;
@@ -64,8 +82,11 @@
   line-height: 20px;
   border: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 20px 40px;
     font-size: 18px;
     line-height: 30px;

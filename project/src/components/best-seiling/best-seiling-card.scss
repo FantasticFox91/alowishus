@@ -20,6 +20,10 @@
   line-height: 18px;
   color: $black-color;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 110px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 36px 0 87px 202px;
     font-size: 40px;

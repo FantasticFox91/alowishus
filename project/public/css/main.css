@@ -450,6 +450,16 @@ main {
   .container {
     padding: 0 20px;
   }
+
+  .page-section__heading {
+    font-size: 36px;
+    line-height: 50px;
+    text-align: left;
+  }
+
+  .page-section__text {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1440px) {

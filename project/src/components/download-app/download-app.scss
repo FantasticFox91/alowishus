@@ -4,14 +4,24 @@
   flex-direction: column;
   max-width: 320px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
+    max-width: none;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
     justify-content: space-between;
     margin-bottom: 200px;
   }
 }
 
 .download-app {
+  @media (min-width: $tablet-width) {
+
+  }
+
   @media (min-width: $desktop-width) {
     width: 551px;
     padding-left: 39px;
@@ -21,15 +31,20 @@
 .download-app__image {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: block;
+    width: 308px;
+    height: 380px;
     margin-left: 100px;
   }
 }
 
 .download-app__button {
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+
   @media (max-width: 1439px) {
-    width: 100%;
     padding: 15px;
     font-size: 14px;
     line-height: 20px;
@@ -38,4 +53,8 @@
 
 .download-app__text {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }

@@ -1,7 +1,18 @@
 @import '../../variables.scss';
 
+.promo-section {
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+}
+
 .promo {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-right: 400px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 130px;
@@ -18,9 +29,17 @@
   height: 284px;
   background-image: url("../../../public/img/promo-bg.png");
   background-size: 280px 284px;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
-    z-index: -1;
+    width: 384px;
+    height: 391px;
+    bottom: 0px;
+    right: 0;
+    background-size: 384px 391px;
+  }
+
+  @media (min-width: $desktop-width) {
     top: 99px;
     right: -36px;
     width: 700px;
@@ -31,6 +50,11 @@
 
 .promo__heading {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+    line-height: 63px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 30px;
@@ -54,6 +78,11 @@
 .promo__text {
   padding-bottom: 350px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    padding-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 60px;
     padding-bottom: 0;
@@ -66,6 +95,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    gap: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     justify-content: start;
