@@ -1,0 +1,47 @@
+@import '../../variables.scss';
+
+.location {
+  margin-bottom: 20px;
+}
+
+.location__text {
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.location__link {
+  position: relative;
+  display: inline-flex;
+  padding-right: 24px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: $black-color;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url("../../../public/img/arrow.svg");
+    background-size: 20px 20px;
+    transform: scale(-1, 1);
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-right: 34px;
+
+    &::after {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

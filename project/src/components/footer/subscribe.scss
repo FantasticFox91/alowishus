@@ -1,0 +1,31 @@
+@import '../../variables.scss';
+
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.subscribe__input {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  background-color: $white-color;
+  border-radius: 65px;
+  box-shadow: 0 12px 30px rgba(205, 209, 214, 0.28);
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 30px;
+    width: 413px;
+  }
+}
+
+.subscribe__button {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 173px;
+  }
+}

@@ -1,11 +1,12 @@
-import './best-selling.css';
+import './best-selling.scss';
+import './best-seiling-card.scss';
 
 function BestSelling(): JSX.Element {
   return (
     <section className="page-section">
       <div className="bestselling">
         <h2 className="bestselling__heading page-section__heading">Best Selling Coffee</h2>
-        <p className="bestselling__text">A drink from the ‘My Alowishus’ bottled brews range OR <br /> grab one of our delicious coffee’s.</p>
+        <p className="bestselling__text page-section__text">A drink from the ‘My Alowishus’ bottled brews <br /> range OR grab one of our delicious coffee’s.</p>
         <ul className="bestselling__list">
           <li className="bestselling__item">
             <div className="bestselling-card">

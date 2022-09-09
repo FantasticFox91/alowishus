@@ -1,0 +1,62 @@
+@import '../../variables.scss';
+
+.contacts {
+  margin-bottom: 20px;
+}
+
+.contacts__list {
+  display: flex;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0;
+  flex-direction: column;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.contacts__link {
+  position: relative;
+  display: flex;
+  padding: 0;
+  padding-left: 64px;
+  align-items: center;
+  font-size: 14px;
+  text-decoration: none;
+  color: $gray-color;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: $white-color;
+    border-radius: 50%;
+    box-shadow: 0 12px 30px rgba(205, 209, 214, 0.28);
+    background-size: 30px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 84px;
+    font-size: 30px;
+    line-height: 44px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.contacts__link--mail::before {
+  background-image: url('../../../public/img/mail.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.contacts__link--phone::before {
+  background-image: url('../../../public/img/phone.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

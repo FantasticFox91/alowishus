@@ -1,11 +1,11 @@
-import './service.css';
+import './services.scss';
 
 function Services(): JSX.Element {
   return (
     <section className="page-section">
       <div className="services">
         <h2 className="services__heading page-section__heading">Explore Our Alowishus</h2>
-        <p className="services__text">A drink from the ‘My Alowishus’ bottled brews range OR <br /> grab one of our delicious coffee’s.</p>
+        <p className="services__text page-section__text">A drink from the ‘My Alowishus’ bottled brews <br /> range OR grab one of our delicious coffee’s.</p>
         <ul className="services__list">
           <li className="services__item">
             <div className="service-card">

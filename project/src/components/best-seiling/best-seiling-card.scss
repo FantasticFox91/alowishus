@@ -1,0 +1,110 @@
+@import '../../variables.scss';
+
+.bestselling-card {
+  background-color: $white-color;
+  border-radius: 24px;
+  padding: 15px;
+  max-width: 280px;
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+    padding: 41px 36px 35px 30px;
+  }
+}
+
+.bestselling-card__heading {
+  position: relative;
+  margin: 0;
+  padding: 25px 0 30px 140px;
+  font-size: 20px;
+  line-height: 18px;
+  color: $black-color;
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 0 87px 202px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+.bestselling-card__heading::before {
+  position: absolute;
+  top: 0;
+  counter-increment: rating;
+  content: "#"counters(rating,"") " Selling";
+  font-size: 14px;
+  color: $gray-color;
+  font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.bestselling-card__heading::after {
+  position: absolute;
+  content: "";
+  width: 110px;
+  height: 181px;
+  top: -90px;
+  left: 0;
+  background-size: 110px 181px;
+
+  @media (min-width: $desktop-width) {
+    top: -116px;
+    left: -10px;
+    width: 186px;
+    height: 305px;
+    background-size: auto;
+  }
+}
+
+.bestselling-card__heading--espresso::after {
+  background-image: url("../../../public/img/double-espresso.png");
+}
+
+.bestselling-card__heading--caramel::after {
+  background-image: url("../../../public/img/caramel-frappe.png");
+}
+
+.bestselling-card__heading--iced::after {
+  background-image: url("../../../public/img/iced-coffe.png");
+}
+
+.bestselling-card__text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.bestselling__price-and-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bestselling__price {
+  margin: 0;
+  font-size: 20px;
+  line-height: 18px;
+  color: $black-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 28px;
+  }
+}
+
+.bestseling-card__button {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 20px;
+}

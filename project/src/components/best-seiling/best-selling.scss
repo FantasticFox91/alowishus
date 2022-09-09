@@ -1,0 +1,49 @@
+@import '../../variables.scss';
+
+.bestselling {
+  position: relative;
+  max-width: 320px;
+}
+
+.bestselling::after {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    top: -169px;
+    right: -190px;
+    width: 285px;
+    height: 313px;
+    background: url("../../../public/img/best-selling-bg.png") no-repeat;
+    filter: blur(7px) drop-shadow(-15px 50px 70px rgba(27, 27, 29, 0.1));
+  }
+}
+
+.bestselling__heading {
+  text-align: center;
+}
+
+.bestselling__text {
+  margin-bottom: 100px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 178px;
+  }
+}
+
+.bestselling__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+  counter-reset: rating;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 393px);
+    gap: 80px 30px;
+  }
+}

@@ -1,0 +1,14 @@
+@import '../../variables.scss';
+
+.about {
+  margin-bottom: 20px;
+}
+
+.about__logo {
+  width: 126px;
+  height: 50px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}

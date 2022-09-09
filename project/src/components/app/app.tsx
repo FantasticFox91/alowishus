@@ -1,22 +1,19 @@
-import BestSelling from '../best-seiling/best-selling';
-import DownloadApp from '../download-app/download-app';
-import Favourite from '../favourite/favourite';
-import Footer from '../footer/footer';
-import Header from '../header/header';
-import Reviews from '../reviews/reviews';
-import Services from '../services/services';
+import MainScreen from '../../pages/main-screen/main-screen';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 function App(): JSX.Element {
   return (
-    <>
-      <Header />
-      <Services />
-      <Favourite />
-      <BestSelling />
-      <DownloadApp />
-      <Reviews />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes >
+        <Route
+          path={'/'}
+          element=
+            {
+              <MainScreen />
+            }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

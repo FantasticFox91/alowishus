@@ -1,4 +1,10 @@
 import './footer.scss';
+import './about.scss';
+import './location.scss';
+import './contacts.scss';
+import './social-list.scss';
+import './subscribe.scss';
+import './copyright.scss';
 
 function Footer(): JSX.Element {
   return (
@@ -124,12 +130,12 @@ function Footer(): JSX.Element {
           <p className="footer__text about__text">We made it our mission to create community everyday and grow meaningful, lasting relationships with our staff, our suppliers and of course you, our customers.</p>
         </div>
         <div className="footer__location location">
-          <h2 className="footer__title">Store Locations</h2>
+          <h2 className="footer__title page-section__heading">Store Locations</h2>
           <p className="footer__text location__text">Find your nearest Alowishus store with opening hours, location and contact details.</p>
           <a className="location__link" href="#">Find my Alowishus </a>
         </div>
         <div className="footer__contacts contacts">
-          <h2 className="footer__title">Contact Alowishus!</h2>
+          <h2 className="footer__title page-section__heading">Contact Alowishus!</h2>
           <ul className="contacts__list">
             <li className="contacts__item">
               <a className="contacts__link contacts__link--mail" href="mailto:alowishus@gmai.com">alowishus@gmai.com</a>
@@ -141,7 +147,7 @@ function Footer(): JSX.Element {
           <ul className="contacts__social-list social-list">
             <li className="contacts__social-item">
               <a className="social-list__link" href="#">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="social-list__icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16.7462 26.2462V16.0012H20.2025L20.7162 11.9899H16.7462V9.43494C16.7462 8.27744 17.0687 7.48494 18.73 7.48494H20.835V3.90869C19.8112 3.79869 18.7812 3.74619 17.7512 3.74994C14.6962 3.74994 12.5987 5.61494 12.5987 9.03869V11.9824H9.16499V15.9937H12.6062V26.2462H16.7462Z" fill="#64646A"/>
                 </svg>
                 <span className="visually-hidden">Facebook</span>
@@ -149,7 +155,7 @@ function Footer(): JSX.Element {
             </li>
             <li className="contacts__social-item">
               <a className="social-list__link" href="#">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="social-list__icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M26.1837 10.3813C26.17 9.43507 25.995 8.49632 25.66 7.61132C25.0737 6.10007 23.88 4.90507 22.3687 4.32007C21.495 3.99132 20.5712 3.81507 19.6362 3.79507C18.4337 3.74132 18.0525 3.72632 15 3.72632C11.9475 3.72632 11.5562 3.72632 10.3625 3.79507C9.42875 3.81507 8.505 3.99132 7.63125 4.32007C6.12 4.90507 4.925 6.10007 4.34 7.61132C4.01125 8.48507 3.83375 9.40882 3.81625 10.3426C3.7625 11.5463 3.74625 11.9276 3.74625 14.9801C3.74625 18.0326 3.74625 18.4226 3.81625 19.6176C3.835 20.5526 4.01125 21.4751 4.34 22.3513C4.92625 23.8613 6.12 25.0563 7.6325 25.6413C8.5025 25.9813 9.42625 26.1738 10.3637 26.2038C11.5675 26.2576 11.9487 26.2738 15.0012 26.2738C18.0537 26.2738 18.445 26.2738 19.6387 26.2038C20.5725 26.1851 21.4962 26.0088 22.3712 25.6801C23.8825 25.0938 25.0762 23.8988 25.6625 22.3888C25.9912 21.5138 26.1675 20.5913 26.1862 19.6551C26.24 18.4526 26.2562 18.0713 26.2562 15.0176C26.2537 11.9651 26.2537 11.5776 26.1837 10.3813ZM14.9925 20.7526C11.8 20.7526 9.21375 18.1663 9.21375 14.9738C9.21375 11.7813 11.8 9.19507 14.9925 9.19507C18.1825 9.19507 20.7712 11.7813 20.7712 14.9738C20.7712 18.1663 18.1825 20.7526 14.9925 20.7526ZM21.0012 10.3288C20.255 10.3288 19.6537 9.72632 19.6537 8.98132C19.6537 8.23632 20.255 7.63382 21.0012 7.63382C21.745 7.63382 22.3475 8.23632 22.3475 8.98132C22.3475 9.72632 21.745 10.3288 21.0012 10.3288Z" fill="#64646A"/>
                   <path d="M14.9925 18.7275C17.0656 18.7275 18.7462 17.0469 18.7462 14.9737C18.7462 12.9006 17.0656 11.22 14.9925 11.22C12.9194 11.22 11.2387 12.9006 11.2387 14.9737C11.2387 17.0469 12.9194 18.7275 14.9925 18.7275Z" fill="#64646A"/>
                 </svg>
@@ -158,7 +164,7 @@ function Footer(): JSX.Element {
             </li>
             <li className="contacts__social-item">
               <a className="social-list__link" href="#">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="social-list__icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M24.5412 9.99618C24.5575 10.2149 24.5575 10.4324 24.5575 10.6499C24.5575 17.3062 19.4912 24.9762 10.2325 24.9762C7.38 24.9762 4.73 24.1499 2.5 22.7149C2.905 22.7612 3.295 22.7774 3.71625 22.7774C6.07 22.7774 8.23625 21.9824 9.9675 20.6262C7.75375 20.5799 5.89875 19.1299 5.25875 17.1349C5.57 17.1812 5.8825 17.2124 6.21 17.2124C6.66125 17.2124 7.115 17.1499 7.53625 17.0412C5.2275 16.5737 3.49875 14.5474 3.49875 12.0999V12.0374C4.17 12.4112 4.94875 12.6449 5.77375 12.6762C4.4175 11.7737 3.52875 10.2299 3.52875 8.48368C3.52875 7.54868 3.7775 6.69118 4.21375 5.94368C6.6925 8.99743 10.4187 10.9937 14.5963 11.2124C14.5188 10.8374 14.4712 10.4487 14.4712 10.0587C14.4712 7.28368 16.7162 5.02368 19.5062 5.02368C20.9562 5.02368 22.265 5.63118 23.185 6.61368C24.3225 6.39493 25.4125 5.97368 26.38 5.39743C26.0063 6.56618 25.21 7.54868 24.1663 8.17243C25.18 8.06243 26.1625 7.78243 27.065 7.39243C26.38 8.38993 25.5237 9.27868 24.5412 9.99618Z" fill="#64646A"/>
                 </svg>
                 <span className="visually-hidden">Twitter</span>
@@ -166,7 +172,7 @@ function Footer(): JSX.Element {
             </li>
             <li className="contacts__social-item">
               <a className="social-list__link" href="#">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="social-list__icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.22874 8.99637C7.73924 8.99637 8.96374 7.77187 8.96374 6.26137C8.96374 4.75087 7.73924 3.52637 6.22874 3.52637C4.71824 3.52637 3.49374 4.75087 3.49374 6.26137C3.49374 7.77187 4.71824 8.99637 6.22874 8.99637Z" fill="#64646A"/>
                   <path d="M11.5462 11.0688V26.2426H16.2575V18.7388C16.2575 16.7588 16.63 14.8413 19.085 14.8413C21.5062 14.8413 21.5362 17.1051 21.5362 18.8638V26.2438H26.25V17.9226C26.25 13.8351 25.37 10.6938 20.5925 10.6938C18.2987 10.6938 16.7612 11.9526 16.1325 13.1438H16.0687V11.0688H11.5462ZM3.86874 11.0688H8.58749V26.2426H3.86874V11.0688Z" fill="#64646A"/>
                 </svg>
@@ -176,7 +182,7 @@ function Footer(): JSX.Element {
           </ul>
         </div>
         <div className="footer__subscribe subscribe">
-          <h2 className="footer__title">First One’s On Us!</h2>
+          <h2 className="footer__title page-section__heading">First One’s On Us!</h2>
           <form className="subscribe__form" method="post" action="#">
             <input className="subscribe__input" type="email" placeholder="E-mail"/>
             <button className="subscribe__button button-primarly" type="submit">Subscribe</button>

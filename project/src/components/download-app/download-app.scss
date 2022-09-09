@@ -1,13 +1,41 @@
+@import '../../variables.scss';
+
 .download-app-section {
-  justify-content: space-between;
-  margin-bottom: 200px;
+  flex-direction: column;
+  max-width: 320px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 200px;
+  }
 }
 
 .download-app {
-  width: 551px;
-  padding-left: 39px;
+  @media (min-width: $desktop-width) {
+    width: 551px;
+    padding-left: 39px;
+  }
 }
 
 .download-app__image {
-  margin-left: 100px;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-left: 100px;
+  }
+}
+
+.download-app__button {
+  @media (max-width: 1439px) {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.download-app__text {
+  margin-bottom: 20px;
 }

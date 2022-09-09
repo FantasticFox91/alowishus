@@ -355,14 +355,13 @@ html {
   outline: none; }
 
 body {
+  position: relative;
+  margin: 0;
   font-family: "Jost", sans-serif;
   font-size: 24px;
   line-height: 35px;
   color: #64646a;
   background: #eeeff1;
-  margin: 0;
-  min-width: 1440px;
-  position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent; }
@@ -383,6 +382,11 @@ main {
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%); }
 
+.container {
+  min-width: 320px;
+  padding: 0 20px;
+}
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,27 +397,41 @@ main {
   max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 0;
+  padding: 20px;
 }
 
 .page-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 20px;
+  padding-bottom: 80px;
 }
 
 .page-section__heading {
   margin: 0;
-  font-size: 64px;
-  line-height: 70px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
   font-weight: 800;
   color: #1b1b1d;
+  text-align: center;
+}
+
+.page-section__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .button-primarly {
@@ -426,4 +444,32 @@ main {
   border: none;
   border-radius: 63px;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1240px;
+  }
+
+  .page-section__heading {
+    font-size: 64px;
+    line-height: 70px;
+  }
+
+  .page-section__text {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .page-header {
+    padding: 20px;
+  }
 }

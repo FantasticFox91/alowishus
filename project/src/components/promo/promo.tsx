@@ -1,4 +1,4 @@
-import './promo.css';
+import './promo.scss';
 
 function Promo(): JSX.Element {
   return (

@@ -7,7 +7,7 @@ function Reviews(): JSX.Element {
         <ul className="slider__list">
           <li className="slider__item">
             <div className="card">
-              <img src="../img/brooklyn-simmons.png" alt="Brooklyn Simmons" width="468" height="324" />
+              <img className='card__image' src="../img/brooklyn-simmons.png" alt="Brooklyn Simmons" width="468" height="324" />
               <figure className="card__quote">
                 <figcaption className="card__author card__author--5Stars">Brooklyn Simmons</figcaption>
                 <blockquote className="card__text">
@@ -18,7 +18,7 @@ function Reviews(): JSX.Element {
           </li>
           <li className="slider__item">
             <div className="card">
-              <img src="../img/imam-white.png" alt="Imam White" width="468" height="324"/>
+              <img className='card__image' src="../img/imam-white.png" alt="Imam White" width="468" height="324"/>
               <figure className="card__quote">
                 <figcaption className="card__author card__author--5Stars">Imam White</figcaption>
                 <blockquote className="card__text">
@@ -29,7 +29,7 @@ function Reviews(): JSX.Element {
           </li>
           <li className="slider__item">
             <div className="card">
-              <img src="../img/imam-white.png" alt="Imam White" width="468" height="324"/>
+              <img className='card__image' src="../img/imam-white.png" alt="Imam White" width="468" height="324"/>
               <figure className="card__quote">
                 <figcaption className="card__author card__author--5Stars">Brooklyn Simmons</figcaption>
                 <blockquote className="card__text">

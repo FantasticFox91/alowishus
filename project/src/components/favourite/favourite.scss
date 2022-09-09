@@ -1,0 +1,73 @@
+@import '../../variables.scss';
+
+.favourite {
+  max-width: 320px;
+}
+
+.favourite-section {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 171px;
+  }
+}
+
+.favourite-section::before {
+  position: absolute;
+  content: "";
+  width: 281px;
+  height: 186px;
+  bottom: 167px;
+  background: url("../../../public/img/favourite-bg.png") no-repeat;
+  background-size: 281px 186px;
+
+  @media (min-width: $desktop-width) {
+    top: -70px;
+    bottom: auto;
+    left: -100px;
+    width: 807px;
+    height: 575px;
+    background-size: auto;
+  }
+}
+
+.favourite {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    max-width: 512px;
+    margin-left: auto;
+  }
+}
+
+.favourite__heading {
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.favourite__text {
+  margin: 0;
+  padding-bottom: 250px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+    padding-bottom: 0;
+  }
+}
+
+.favourite__button {
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding: 20px 40px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

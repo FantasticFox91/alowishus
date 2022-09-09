@@ -1,0 +1,65 @@
+@import '../../variables.scss';
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  width: 100%;
+  border-top: 1px solid rgba(27, 27, 29, 0.1);
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.copyright__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+.copyright__text--bold {
+  color: $black-color;
+  font-weight: 500;
+}
+
+.copyright__list {
+  display: flex;
+  gap: 31px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.copyright__link {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: inherit;
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+.copyright__item:first-child {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      right: -15px;
+      width: 2px;
+      height: 100%;
+      background-color: $gray-color;
+    }
+  }
+}
