@@ -444,6 +444,12 @@ main {
   border: none;
   border-radius: 63px;
   cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+}
+
+.button-primarly:hover {
+  color: #1b1b1d;
+  background-color: #ffffff;
 }
 
 @media (min-width: 768px) {
