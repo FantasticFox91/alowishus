@@ -14,51 +14,77 @@
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     max-width: 1240px;
-    margin-bottom: 204px;
-    padding-top: 113px;
+    margin-bottom: 328px;
+    padding-top: 276px;
   }
 }
 
 .download-app {
-  @media (min-width: $desktop-width) {
-    width: 580px;
-    padding-left: 39px;
-  }
-}
+  position: relative;
 
-.download-app__image {
-  display: none;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 60px;
+    left: calc(50% - 120px);
+    width: 240px;
+    height: 261px;
+    background-image: url("../../../public/img/download-app-bg.png");
+    background-size: 240px 261px;
+  }
 
   @media (min-width: $tablet-width) {
-    display: block;
-    width: 308px;
-    height: 380px;
-    margin-left: 100px;
+    padding-right: 410px;
+
+    &::after {
+      top: calc(50% - 163px);
+      bottom: auto;
+      left: auto;
+      right: 0;
+      width: 300px;
+      height: 326px;
+      background-size: 300px 326px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 781px;
-    height: 727px;
+    padding-right: 689px;
+    padding-left: 39px;
+
+    &::after {
+      top: calc(50% - 467px);
+      right: -11px;
+      width: 740px;
+      height: 895px;
+      background-size: 820px 936px;
+    }
   }
 }
 
 .download-app__button {
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 20px;
+
   @media (min-width: $tablet-width) {
     width: auto;
   }
 
-  @media (max-width: 1439px) {
-    padding: 15px;
-    font-size: 14px;
-    line-height: 20px;
+  @media (min-width: $desktop-width) {
+    padding: 20px 40px;
+    word-spacing: 0.2em;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 .download-app__text {
-  margin-bottom: 20px;
+  padding-bottom: 280px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    padding-bottom: 0;
+    margin-bottom: 61px;
   }
 }
 

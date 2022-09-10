@@ -14,7 +14,7 @@
     flex-direction: row;
     padding-bottom: 210px;
     min-height: 653px;
-    gap: 100px;
+    gap: 74px;
   }
 }
 
@@ -22,11 +22,11 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     content: "";
-    top: -300px;
-    left: 0;
+    top: -350px;
+    left: -68px;
     width: 379px;
     height: 568px;
-    background: url('../../../public/img/reviews-bg-top.png');
+    background: url('../../../public/img/reviews-bg-top.png') 50% 50%;
     transform: scale(1) rotate(0deg);
   }
 }
@@ -35,11 +35,12 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     content: "";
-    bottom: 0;
-    right: 0;
-    width: 356px;
-    height: 499px;
-    background: url('../../../public/img/reviews-bg-bottom.png');
+    bottom: -61px;
+    right: -97px;
+    width: 350px;
+    height: 622px;
+    background: url('../../../public/img/reviews-bg-bottom.png') 50% 50%;
+
   }
 }
 
@@ -52,7 +53,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1237px;
+    width: 1215px;
     min-height: 468px;
   }
 }
@@ -166,6 +167,8 @@
   @media (min-width: $desktop-width) {
     min-height: 653px;
     margin-bottom: 0;
+    padding-top: 3px;
+    justify-content: flex-start;
   }
 }
 
@@ -195,6 +198,7 @@
   margin: 0;
   font-size: 40px;
   line-height: 40px;
+  font-weight: 600;
   color: #1b1b1d;
 }
 

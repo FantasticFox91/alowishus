@@ -15,8 +15,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 108px 227px;
-    grid-template-rows: 1fr 350px;
+    width: 100%;
+    padding-right: 44px;
+    gap: 90px 226px;
+    grid-template-columns: 558px 1fr;
+    grid-template-rows: 1fr 319px;
   }
 }
 
@@ -38,6 +41,8 @@
   text-align: left;
 
   @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 50px;
     margin-bottom: 30px;
   }
 }

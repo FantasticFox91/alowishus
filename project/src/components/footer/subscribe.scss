@@ -15,8 +15,10 @@
   box-shadow: 0 12px 30px rgba(205, 209, 214, 0.28);
 
   @media (min-width: $desktop-width) {
-    padding: 20px 30px;
     width: 413px;
+    padding: 20px 30px;
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 
@@ -27,5 +29,8 @@
 
   @media (min-width: $desktop-width) {
     width: 173px;
+    padding: 20px 40px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
