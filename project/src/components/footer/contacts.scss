@@ -35,6 +35,7 @@
   font-size: 14px;
   text-decoration: none;
   color: $gray-color;
+  transition: $basic-animation;
 
   &::before {
     position: absolute;
@@ -46,6 +47,7 @@
     border-radius: 50%;
     box-shadow: 0 12px 30px rgba(205, 209, 214, 0.28);
     background-size: 30px 30px;
+    transition: $basic-animation;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,4 +72,25 @@
   background-image: url('../../../public/img/phone.svg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+.contacts__link {
+  transition: $basic-animation;
+
+  &:hover {
+    color: $black-color;
+
+    &::before {
+      transform: scale(0.9);
+    }
+  }
+
+  &:focus {
+    color: $black-color;
+
+    &::before {
+      outline: 2px solid tomato;
+      transform: scale(0.9);
+    }
+  }
 }

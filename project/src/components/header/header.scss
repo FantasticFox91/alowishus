@@ -10,6 +10,7 @@
 
 .page-header__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
@@ -40,7 +41,8 @@
   text-align: center;
   transition: $basic-animation;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $gray-color;
   }
 
@@ -58,7 +60,8 @@
     transition: $basic-animation;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     transform: rotate(0deg);
   }
 }
@@ -68,6 +71,8 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 
@@ -75,17 +80,11 @@
   border: none;
   cursor: pointer;
   transition: $basic-animation;
-
-  &:hover {
-    background-color: $white-color;
-    color: $black-color;
-  }
 }
 
 .page-header__button--cart {
   position: relative;
   display: flex;
-  margin-right: 20px;
   align-items: center;
   justify-content: center;
   width: 56px;
@@ -100,11 +99,12 @@
 }
 
 .page-header__button--cart:hover {
-  background-color: $black-color;
+  transform: scale(0.9);
+}
 
-  & .page-header__icon {
-    fill: $white-color;
-  }
+.page-header__button--cart:focus {
+  transform: scale(0.9);
+  outline: 2px solid tomato;
 }
 
 .header__nav {

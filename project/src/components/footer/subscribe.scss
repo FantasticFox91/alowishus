@@ -13,6 +13,15 @@
   background-color: $white-color;
   border-radius: 65px;
   box-shadow: 0 12px 30px rgba(205, 209, 214, 0.28);
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid tomato;
+  }
+
+  &:not(:placeholder-shown):focus {
+    outline: none;
+  }
 
   @media (min-width: $desktop-width) {
     width: 413px;

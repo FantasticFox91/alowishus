@@ -27,6 +27,26 @@
   background-color: $white-color;
   border-radius: 50%;
   box-shadow: 0 12px 30px rgba(205, 209, 214, 0.28);
+  transition: $basic-animation;
+
+  &:hover {
+    transform: scale(0.9);
+
+    .social-list__icon path {
+      transition: $basic-animation;
+      fill: $black-color;
+    }
+  }
+
+  &:focus {
+    transform: scale(0.9);
+    outline: 2px solid tomato;
+
+    .social-list__icon path {
+      transition: $basic-animation;
+      fill: $black-color;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     width: 60px;

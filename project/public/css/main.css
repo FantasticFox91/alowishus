@@ -448,8 +448,17 @@ main {
 }
 
 .button-primarly:hover {
-  color: #1b1b1d;
-  background-color: #ffffff;
+  transform: scale(0.95);
+}
+
+.button-primarly:focus {
+  transform: scale(0.95);
+  outline: 2px solid tomato;
+}
+
+.button-primarly:active {
+  outline: none;
+  transform: scale(0.95);
 }
 
 @media (min-width: 768px) {
