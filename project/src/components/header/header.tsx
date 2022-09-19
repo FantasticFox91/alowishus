@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { AppRoute } from '../../const';
 import Logo from '../logo/logo';
 import Promo from '../promo/promo';
 import './header.scss';
@@ -15,7 +17,7 @@ function Header(): JSX.Element {
         <div className="header__nav">
           <ul className="page-header__list">
             <li className="page-header__item">
-              <a className="page-header__link" href="#">Cafe Menu</a>
+              <Link className="page-header__link" to={AppRoute.Menu}>Cafe Menu</Link>
             </li>
             <li className="page-header__item">
               <a className="page-header__link" href="#">About Us</a>

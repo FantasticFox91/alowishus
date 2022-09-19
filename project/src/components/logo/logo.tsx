@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
+import { AppRoute } from '../../const';
 
 function Logo(): JSX.Element {
   return (
-    <Link to='#'>
+    <Link to={AppRoute.Root}>
       <svg width="126" height="50" viewBox="0 0 126 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
         <path fill="url(#a)" d="M0 0h126v50H0z"/>
         <defs>
