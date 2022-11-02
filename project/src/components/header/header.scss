@@ -66,6 +66,12 @@
   }
 }
 
+.page-header__link--active {
+  &::after {
+    transform: rotate(0deg);
+  }
+}
+
 .page-header__user-buttons {
   display: flex;
 

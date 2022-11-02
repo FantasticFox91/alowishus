@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { AppRoute } from '../../const';
 import './promo.scss';
 
 function Promo(): JSX.Element {
@@ -8,7 +10,7 @@ function Promo(): JSX.Element {
         <p className="promo__text page-section__text">A drink from the ‘My Alowishus’ bottled brews <br /> range OR grab one of our delicious coffee’s.</p>
         <div className="promo__buttons">
           <button className='button-primarly promo__button' type='button'>Download App</button>
-          <a className="promo__link" href="#">Shop Coffee</a>
+          <Link className="promo__link" to={AppRoute.Menu}>Shop Coffee</Link>
         </div>
       </div>
     </section>

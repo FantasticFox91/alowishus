@@ -46,16 +46,8 @@
 
 .slider {
   width: 280px;
+  min-height: 20px;
   overflow: hidden;
-
-  @media (min-width: $tablet-width) {
-    width: 500px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1215px;
-    min-height: 468px;
-  }
 }
 
 .slider__list {

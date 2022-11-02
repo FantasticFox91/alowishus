@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { AppRoute } from '../../const';
 import './services.scss';
 
 function Services(): JSX.Element {
@@ -32,7 +34,7 @@ function Services(): JSX.Element {
                   </clipPath>
                 </defs>
               </svg>
-              <button className="services-card__button button-primarly">food menu</button>
+              <Link className="services-card__button button-primarly" to={AppRoute.Menu}>food menu</Link>
             </div>
           </li>
           <li className="services__item">

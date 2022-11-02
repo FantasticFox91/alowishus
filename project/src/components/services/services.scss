@@ -120,6 +120,9 @@
 }
 
 .services-card__button {
+  display: block;
+  text-decoration: none;
+  text-align: center;
   padding: 15px;
   font-size: 14px;
   line-height: 20px;

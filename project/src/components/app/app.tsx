@@ -21,6 +21,10 @@ function App(): JSX.Element {
               <MenuScreen />
             }
         />
+        <Route
+          path={AppRoute.NotFound}
+          element={<MainScreen />}
+        />
       </Routes>
     </BrowserRouter>
   );

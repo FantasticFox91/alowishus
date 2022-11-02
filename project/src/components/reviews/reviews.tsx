@@ -15,11 +15,9 @@ function Reviews(): JSX.Element {
           320: {
             width: 280,
           },
-          // when window width is >= 640px
           767: {
             width: 340,
           },
-          // when window width is >= 768px
           1440: {
             width: 470,
           },
