@@ -1,44 +1,19 @@
 import './best-selling.scss';
-import './best-seiling-card.scss';
+import { Product } from '../../types/products';
+import BestSellingList from '../best-selling-list/best-selling-list';
 
-function BestSelling(): JSX.Element {
+type bestSellingProps = {
+  products: Product[]
+}
+
+function BestSelling(products: bestSellingProps): JSX.Element {
+  const threePopularProducts = products.products.splice(0, 3);
   return (
     <section className="page-section">
       <div className="bestselling">
         <h2 className="bestselling__heading page-section__heading">Best Selling Coffee</h2>
         <p className="bestselling__text page-section__text">A drink from the ‘My Alowishus’ bottled brews <br /> range OR grab one of our delicious coffee’s.</p>
-        <ul className="bestselling__list">
-          <li className="bestselling__item">
-            <div className="bestselling-card">
-              <h3 className="bestselling-card__heading bestselling-card__heading--espresso">Double <br /> Espresso</h3>
-              <p className="bestselling-card__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-              <div className="bestselling__price-and-button">
-                <p className="bestselling__price">$59.99</p>
-                <button className="bestseling-card__button button-primarly">Order now</button>
-              </div>
-            </div>
-          </li>
-          <li className="bestselling__item">
-            <div className="bestselling-card">
-              <h3 className="bestselling-card__heading bestselling-card__heading--caramel">Caramel <br /> Frappe</h3>
-              <p className="bestselling-card__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-              <div className="bestselling__price-and-button">
-                <p className="bestselling__price">$59.99</p>
-                <button className="bestseling-card__button button-primarly">Order now</button>
-              </div>
-            </div>
-          </li>
-          <li className="bestselling__item">
-            <div className="bestselling-card">
-              <h3 className="bestselling-card__heading bestselling-card__heading--iced">Iced <br /> Coffee</h3>
-              <p className="bestselling-card__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-              <div className="bestselling__price-and-button">
-                <p className="bestselling__price">$59.99</p>
-                <button className="bestseling-card__button button-primarly">Order now</button>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <BestSellingList products={threePopularProducts}/>
       </div>
     </section>
   );

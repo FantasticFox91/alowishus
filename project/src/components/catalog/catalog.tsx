@@ -2,20 +2,22 @@ import './catalog.scss';
 import './products.scss';
 import './product-card.scss';
 import './filters.scss';
-import MultiRangeSlider from 'multi-range-slider-react';
+import MultiRangeSlider, { ChangeResult } from 'multi-range-slider-react';
 import { useState } from 'react';
+import BestSellingList from '../best-selling-list/best-selling-list';
+import { PRODUCTS } from '../../mocks/products';
 
 function Catalog(): JSX.Element {
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(100);
-  const handlePriceInput = (e:any) => {
+  const handlePriceInput = (e:ChangeResult) => {
     setMinPrice(e.minValue);
     setMaxPrice(e.maxValue);
   };
 
   const [minValue, setMinValue] = useState(100);
   const [maxValue, setMaxValue] = useState(500);
-  const handleValueInput = (e:any) => {
+  const handleValueInput = (e:ChangeResult) => {
     setMinValue(e.minValue);
     setMaxValue(e.maxValue);
   };
@@ -26,7 +28,7 @@ function Catalog(): JSX.Element {
         <form className="filters__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset className="filters__group">
             <legend className="filters__title">Search</legend>
-            <input className="filters__search" type="search" autoComplete="off" placeholder="Type drink name" />
+            <input className="filters__search" type="search" autoComplete="off" placeholder="Type drink name" onChange={() => 123}/>
           </fieldset>
           <fieldset className="filters__group">
             <legend className="filters__title filters__title--price">Price</legend>
@@ -110,98 +112,7 @@ function Catalog(): JSX.Element {
             <option value="popular">Top rating</option>
           </select>
         </div>
-        <ul className="bestselling__list">
-          <li className="bestselling__item">
-            <div className="bestselling-card">
-              <h3 className="bestselling-card__heading bestselling-card__heading--espresso">Double <br /> Espresso</h3>
-              <p className="bestselling-card__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-              <div className="bestselling__price-and-button">
-                <p className="bestselling__price">$59.99</p>
-                <button className="bestseling-card__button button-primarly">Order now</button>
-              </div>
-            </div>
-          </li>
-          <li className="bestselling__item">
-            <div className="bestselling-card">
-              <h3 className="bestselling-card__heading bestselling-card__heading--caramel">Caramel <br /> Frappe</h3>
-              <p className="bestselling-card__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-              <div className="bestselling__price-and-button">
-                <p className="bestselling__price">$59.99</p>
-                <button className="bestseling-card__button button-primarly">Order now</button>
-              </div>
-            </div>
-          </li>
-          <li className="bestselling__item">
-            <div className="bestselling-card">
-              <h3 className="bestselling-card__heading bestselling-card__heading--iced">Iced <br /> Coffee</h3>
-              <p className="bestselling-card__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-              <div className="bestselling__price-and-button">
-                <p className="bestselling__price">$59.99</p>
-                <button className="bestseling-card__button button-primarly">Order now</button>
-              </div>
-            </div>
-          </li>
-          <li className="bestselling__item">
-            <div className="bestselling-card">
-              <h3 className="bestselling-card__heading bestselling-card__heading--iced">Iced <br /> Coffee</h3>
-              <p className="bestselling-card__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-              <div className="bestselling__price-and-button">
-                <p className="bestselling__price">$59.99</p>
-                <button className="bestseling-card__button button-primarly">Order now</button>
-              </div>
-            </div>
-          </li>
-          <li className="bestselling__item">
-            <div className="bestselling-card">
-              <h3 className="bestselling-card__heading bestselling-card__heading--iced">Iced <br /> Coffee</h3>
-              <p className="bestselling-card__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-              <div className="bestselling__price-and-button">
-                <p className="bestselling__price">$59.99</p>
-                <button className="bestseling-card__button button-primarly">Order now</button>
-              </div>
-            </div>
-          </li>
-          <li className="bestselling__item">
-            <div className="bestselling-card">
-              <h3 className="bestselling-card__heading bestselling-card__heading--iced">Iced <br /> Coffee</h3>
-              <p className="bestselling-card__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-              <div className="bestselling__price-and-button">
-                <p className="bestselling__price">$59.99</p>
-                <button className="bestseling-card__button button-primarly">Order now</button>
-              </div>
-            </div>
-          </li>
-          <li className="bestselling__item">
-            <div className="bestselling-card">
-              <h3 className="bestselling-card__heading bestselling-card__heading--iced">Iced <br /> Coffee</h3>
-              <p className="bestselling-card__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-              <div className="bestselling__price-and-button">
-                <p className="bestselling__price">$59.99</p>
-                <button className="bestseling-card__button button-primarly">Order now</button>
-              </div>
-            </div>
-          </li>
-          <li className="bestselling__item">
-            <div className="bestselling-card">
-              <h3 className="bestselling-card__heading bestselling-card__heading--iced">Iced <br /> Coffee</h3>
-              <p className="bestselling-card__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-              <div className="bestselling__price-and-button">
-                <p className="bestselling__price">$59.99</p>
-                <button className="bestseling-card__button button-primarly">Order now</button>
-              </div>
-            </div>
-          </li>
-          <li className="bestselling__item">
-            <div className="bestselling-card">
-              <h3 className="bestselling-card__heading bestselling-card__heading--iced">Iced <br /> Coffee</h3>
-              <p className="bestselling-card__text">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-              <div className="bestselling__price-and-button">
-                <p className="bestselling__price">$59.99</p>
-                <button className="bestseling-card__button button-primarly">Order now</button>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <BestSellingList products={PRODUCTS} />
       </div>
     </section>
   );

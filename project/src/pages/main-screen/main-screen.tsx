@@ -6,6 +6,7 @@ import Header from '../../components/header/header';
 import Promo from '../../components/promo/promo';
 import Reviews from '../../components/reviews/reviews';
 import Services from '../../components/services/services';
+import { PRODUCTS } from '../../mocks/products';
 
 function MainScreen(): JSX.Element {
   return (
@@ -14,7 +15,7 @@ function MainScreen(): JSX.Element {
       <Promo />
       <Services />
       <Favourite />
-      <BestSelling />
+      <BestSelling products={PRODUCTS}/>
       <DownloadApp />
       <Reviews />
       <Footer />
